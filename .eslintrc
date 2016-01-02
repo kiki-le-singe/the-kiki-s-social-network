@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "globals": {
+    "__CLIENT__": false,
+    "__SERVER__": false,
+    "__DEV__": false,
+    "__PROD__": false,
+    "__DEBUG__": false,
+    "Framework7": false,
+    "f7App": false
+  },
+  "rules": {
+    "no-unused-vars": 1,
+    "indent": [2, 2, {
+      "SwitchCase": 1
+    }]
+  }
+}
