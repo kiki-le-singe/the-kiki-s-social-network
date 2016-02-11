@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import ToolActions from 'actions/ToolActions';
+import ToolActions from '../../redux/actions/ToolActions';
 
 class SearchTools extends Component {
 
   handleChange = (e) => {
     ToolActions.search(e.target.value);
-  }
+  };
 
   render() {
     return (

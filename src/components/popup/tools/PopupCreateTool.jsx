@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ReactDom, { findDOMNode } from 'react-dom'; // eslint-disable-line
-import _ from 'lodash';
+import { kebabCase } from 'lodash/string';
 import uniqid from 'uniqid';
 
-import ToolActions from 'actions/ToolActions';
+import ToolActions from '../../../redux/actions/ToolActions';
 
 import TopNavBar from 'components/TopNavBar';
 import IconButton from 'components/IconButton';
@@ -45,10 +45,10 @@ class PopupCreateTool extends Component {
     // Send request to the server
     ToolActions.create({
       id: uniqid(),
-      title: title,
-      text: text,
-      route: route,
-      slug: _.kebabCase(title),
+      title,
+      text,
+      route,
+      slug: kebabCase(title),
     }).then(() => {
       titleEL.value = '';
       textEl.value = '';
@@ -59,7 +59,7 @@ class PopupCreateTool extends Component {
 
       f7App.closeModal(popupCreateToolEl);
     });
-  }
+  };
 
   render() {
     return (
@@ -111,7 +111,13 @@ class PopupCreateTool extends Component {
                     </ul>
                   </div>
                   <div className="content-block">
-                    <a href="#" className="button button-big button-fill button-raised color-red ajax" onClick={this.handleClick}>Submit</a>
+                    <a
+                      href="#"
+                      className="button button-big button-fill button-raised color-red ajax"
+                      onClick={this.handleClick}
+                    >
+                      Submit
+                    </a>
                   </div>
                 </form>
               </div>
