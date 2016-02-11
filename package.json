@@ -1,16 +1,16 @@
 {
-  "name": "react-redux-boilerplate",
-  "version": "1.0.2",
+  "name": "the-kiki-s-social-network",
+  "version": "0.0.1",
   "author": {
     "name": "Kiki le singe"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiki-le-singe/react-redux-boilerplate.git"
+    "url": "https://github.com/kiki-le-singe/the-kiki-s-social-network.git"
   },
-  "homepage": "https://github.com/kiki-le-singe/react-redux-boilerplate",
-  "bugs": "https://github.com/kiki-le-singe/react-redux-boilerplate/issues",
+  "homepage": "https://github.com/kiki-le-singe/the-kiki-s-social-network",
+  "bugs": "https://github.com/kiki-le-singe/the-kiki-s-social-network/issues",
   "keywords": [
     "boilerplate",
     "react",
@@ -30,7 +30,7 @@
     "postcss",
     "cssnext"
   ],
-  "description": "Get started with React, Redux, Express...",
+  "description": "The Kiki's Social Network",
   "engines": {
     "node": ">=5.0.0",
     "npm": "^3.3.12"
